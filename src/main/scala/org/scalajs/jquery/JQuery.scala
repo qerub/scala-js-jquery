@@ -42,7 +42,7 @@ trait JQueryAjaxSettings extends js.Object {
   var xhrFields: js.Any = js.native
 }
 
-trait JQueryXHR extends XMLHttpRequest {
+trait JQueryXHR extends XMLHttpRequest with JQueryPromise {
   def overrideMimeType(): js.Dynamic = js.native
 }
 
