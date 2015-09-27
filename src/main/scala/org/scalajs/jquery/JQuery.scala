@@ -63,7 +63,6 @@ trait JQueryPromise extends js.Object {
   def always(alwaysCallbacks: js.Any*): JQueryDeferred = js.native
   def done(doneCallbacks: js.Any*): JQueryDeferred = js.native
   def fail(failCallbacks: js.Any*): JQueryDeferred = js.native
-  def pipe(doneFilter: js.Function1[js.Any, js.Any] = ???, failFilter: js.Function1[js.Any, js.Any] = ???, progressFilter: js.Function1[js.Any, js.Any] = ???): JQueryPromise = js.native
   def `then`(doneCallbacks: js.Any, failCallbacks: js.Any, progressCallbacks: js.Any = ???): JQueryDeferred = js.native
 }
 
